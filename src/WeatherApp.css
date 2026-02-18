@@ -1,0 +1,50 @@
+/* Puray App ka main container */
+.weather-app-container {
+    min-height: 100vh;
+    width: 100%;
+    /* Ek bhayankar dark gradient background */
+    background: radial-gradient(circle at top right, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    
+    /* Text Color Fix */
+    color: #ffffff; 
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); /* Text ko highlight karne ke liye shadow */
+    
+    /* Agar gradient hi chahiye toh ye secure tarika hai */
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Transparent tabhi karna jab clip sahi kaam kare, varna isko comment kar dena */
+    /* -webkit-text-fill-color: transparent; */ 
+    
+    text-align: center;
+}
+
+.spidy-tag {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 2rem;
+    }
+}
